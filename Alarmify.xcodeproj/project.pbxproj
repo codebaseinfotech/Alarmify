@@ -12,6 +12,8 @@
 		8864937A2F0BBFF5006D2FDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886493732F0BBFF5006D2FDC /* Main.storyboard */; };
 		8864937B2F0BBFF5006D2FDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8864936D2F0BBFF5006D2FDC /* AppDelegate.swift */; };
 		8864937D2F0BBFF5006D2FDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886493752F0BBFF5006D2FDC /* ViewController.swift */; };
+		88D42F792F0D2EB5007BF105 /* MathEquationsTblViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D42F772F0D2EB5007BF105 /* MathEquationsTblViewCell.swift */; };
+		88D42F7A2F0D2EB5007BF105 /* MathEquationsTblViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D42F782F0D2EB5007BF105 /* MathEquationsTblViewCell.xib */; };
 		BC2A41472F0BD2360080DFFD /* AlaramTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A41452F0BD2360080DFFD /* AlaramTVCell.swift */; };
 		BC2A41482F0BD2360080DFFD /* AlaramTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2A41462F0BD2360080DFFD /* AlaramTVCell.xib */; };
 		BC2A414D2F0BDCE80080DFFD /* AddNewAlarmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A414B2F0BDCE80080DFFD /* AddNewAlarmVC.swift */; };
@@ -96,6 +98,8 @@
 		886493702F0BBFF5006D2FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		886493722F0BBFF5006D2FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		886493752F0BBFF5006D2FDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88D42F772F0D2EB5007BF105 /* MathEquationsTblViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathEquationsTblViewCell.swift; sourceTree = "<group>"; };
+		88D42F782F0D2EB5007BF105 /* MathEquationsTblViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MathEquationsTblViewCell.xib; sourceTree = "<group>"; };
 		BC2A41452F0BD2360080DFFD /* AlaramTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlaramTVCell.swift; sourceTree = "<group>"; };
 		BC2A41462F0BD2360080DFFD /* AlaramTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlaramTVCell.xib; sourceTree = "<group>"; };
 		BC2A414B2F0BDCE80080DFFD /* AddNewAlarmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAlarmVC.swift; sourceTree = "<group>"; };
@@ -214,6 +218,15 @@
 				886493752F0BBFF5006D2FDC /* ViewController.swift */,
 			);
 			path = Alarmify;
+			sourceTree = "<group>";
+		};
+		88D42F762F0D2E83007BF105 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				88D42F772F0D2EB5007BF105 /* MathEquationsTblViewCell.swift */,
+				88D42F782F0D2EB5007BF105 /* MathEquationsTblViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		BC2A41422F0BD2070080DFFD /* Cell */ = {
@@ -541,6 +554,7 @@
 		BCBF73DC2F0CFC30004F134A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				88D42F762F0D2E83007BF105 /* Cell */,
 				BCBF73DA2F0CFC30004F134A /* MathChallengeVC.swift */,
 				BCBF73DB2F0CFC30004F134A /* MathChallengeVC.xib */,
 			);
@@ -707,6 +721,7 @@
 				BC4259932F0BC23600C15DA6 /* Montserrat-ThinItalic.ttf in Resources */,
 				BCBF73F42F0D033D004F134A /* SnoozeVC.xib in Resources */,
 				BC4259942F0BC23600C15DA6 /* Montserrat-BlackItalic.ttf in Resources */,
+				88D42F7A2F0D2EB5007BF105 /* MathEquationsTblViewCell.xib in Resources */,
 				BC4259952F0BC23600C15DA6 /* Montserrat-LightItalic.ttf in Resources */,
 				BC4259962F0BC23600C15DA6 /* Montserrat-Thin.ttf in Resources */,
 				BC4259972F0BC23600C15DA6 /* Montserrat-ExtraBold.ttf in Resources */,
@@ -778,6 +793,7 @@
 				BC81EB752F0CC7C800114F1E /* AddNewViewModel.swift in Sources */,
 				BC2A41472F0BD2360080DFFD /* AlaramTVCell.swift in Sources */,
 				BC4259702F0BC1BD00C15DA6 /* PickerViewViewController.swift in Sources */,
+				88D42F792F0D2EB5007BF105 /* MathEquationsTblViewCell.swift in Sources */,
 				BC4259712F0BC1BD00C15DA6 /* UITextField+Extention.swift in Sources */,
 				BC4259722F0BC1BD00C15DA6 /* AGDesignable.swift in Sources */,
 			);

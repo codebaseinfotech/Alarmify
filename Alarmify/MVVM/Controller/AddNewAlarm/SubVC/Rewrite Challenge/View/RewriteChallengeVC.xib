@@ -199,7 +199,7 @@
                         </label>
                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="v5w-64-tTE">
                             <rect key="frame" x="13" y="75.333333333333371" width="327" height="31"/>
-                            <color key="minimumTrackTintColor" name="primary_green"/>
+                            <color key="minimumTrackTintColor" name="primery_green"/>
                             <connections>
                                 <action selector="sliderChanged:" destination="-1" eventType="valueChanged" id="0jD-32-YAi"/>
                             </connections>
