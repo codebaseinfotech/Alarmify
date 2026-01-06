@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="BarcodeListTblViewCell" customModule="Alarmify" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kas-Hd-tYv">
+                        <rect key="frame" x="20" y="0.0" width="280" height="58"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_squer_check" translatesAutoresizingMaskIntoConstraints="NO" id="HN8-ey-BLj">
+                                <rect key="frame" x="0.0" y="16" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="UFo-s9-hJd"/>
+                                    <constraint firstAttribute="width" constant="26" id="wF7-tv-FuT"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_delete" translatesAutoresizingMaskIntoConstraints="NO" id="EN8-3a-th2">
+                                <rect key="frame" x="262" y="19" width="18" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="CfK-R3-BOu"/>
+                                    <constraint firstAttribute="height" constant="20" id="pEd-dz-r3M"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toothpaste (Bathroom)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6r-zs-Qcc">
+                                <rect key="frame" x="41" y="9.9999999999999982" width="176" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="textColor" name="text"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8901526103423" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kR-Sw-DVR">
+                                <rect key="frame" x="41" y="33.333333333333336" width="101" height="15.666666666666664"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" name="text_gray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hv1-qe-3wz">
+                                <rect key="frame" x="0.0" y="57" width="280" height="1"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="cRu-P4-3nr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8kR-Sw-DVR" firstAttribute="bottom" secondItem="HN8-ey-BLj" secondAttribute="bottom" constant="7" id="1bz-bQ-cIf"/>
+                            <constraint firstAttribute="trailing" secondItem="EN8-3a-th2" secondAttribute="trailing" id="66l-9w-4Ks"/>
+                            <constraint firstItem="hv1-qe-3wz" firstAttribute="leading" secondItem="kas-Hd-tYv" secondAttribute="leading" id="6Xy-01-R8Z"/>
+                            <constraint firstItem="J6r-zs-Qcc" firstAttribute="leading" secondItem="HN8-ey-BLj" secondAttribute="trailing" constant="15" id="BVi-eT-IXf"/>
+                            <constraint firstAttribute="bottom" secondItem="hv1-qe-3wz" secondAttribute="bottom" id="CiH-ZC-5PM"/>
+                            <constraint firstItem="HN8-ey-BLj" firstAttribute="leading" secondItem="kas-Hd-tYv" secondAttribute="leading" id="CyS-Bb-TrU"/>
+                            <constraint firstAttribute="trailing" secondItem="hv1-qe-3wz" secondAttribute="trailing" id="Cyy-7v-Io3"/>
+                            <constraint firstItem="J6r-zs-Qcc" firstAttribute="top" secondItem="HN8-ey-BLj" secondAttribute="top" constant="-6" id="W0E-Jh-WWU"/>
+                            <constraint firstItem="8kR-Sw-DVR" firstAttribute="leading" secondItem="HN8-ey-BLj" secondAttribute="trailing" constant="15" id="kl6-GP-beo"/>
+                            <constraint firstItem="EN8-3a-th2" firstAttribute="centerY" secondItem="kas-Hd-tYv" secondAttribute="centerY" id="lOj-sg-3gU"/>
+                            <constraint firstItem="HN8-ey-BLj" firstAttribute="centerY" secondItem="kas-Hd-tYv" secondAttribute="centerY" id="mFf-Nl-IOX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="kas-Hd-tYv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="5bz-eB-zZ5"/>
+                    <constraint firstItem="kas-Hd-tYv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="G8N-0y-gfG"/>
+                    <constraint firstAttribute="trailing" secondItem="kas-Hd-tYv" secondAttribute="trailing" constant="20" id="fJB-od-ZyV"/>
+                    <constraint firstAttribute="bottom" secondItem="kas-Hd-tYv" secondAttribute="bottom" id="z3F-J4-dIa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="-35" y="-32"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_delete" width="20" height="22"/>
+        <image name="ic_squer_check" width="26" height="26"/>
+        <namedColor name="text">
+            <color red="0.85882352941176465" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="text_gray">
+            <color red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

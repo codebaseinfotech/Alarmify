@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Radial (Default)",
+    "type": "radial",
+    "url": "bundle://radial.mp3"
+  },
+  {
+    "name": "Opening",
+    "type": "opening_iphone",
+    "url": "bundle://opening_iphone.mp3"
+  },
+  {
+    "name": "Sencha",
+    "type": "sencha_ios",
+    "url": "bundle://sencha_ios.mp3"
+  },
+  {
+    "name": "Milky Way",
+    "type": "ios_18_milky_way",
+    "url": "bundle://ios_18_milky_way.mp3"
+  },
+  {
+    "name": "Mercury",
+    "type": "mercury_iphone",
+    "url": "bundle://mercury_iphone.mp3"
+  },
+  {
+    "name": "Little Bird",
+    "type": "ios_26_little_bird",
+    "url": "bundle://ios_26_little_bird.mp3"
+  },
+  {
+    "name": "Kettle",
+    "type": "kettle_iphone",
+    "url": "bundle://kettle_iphone.mp3"
+  },
+  {
+    "name": "Journey",
+    "type": "ios_18_journey",
+    "url": "bundle://ios_18_journey.mp3"
+  },
+  {
+    "name": "Cold",
+    "type": "cold_iphone",
+    "url": "bundle://cold_iphone.mp3"
+  },
+  {
+    "name": "Departure",
+    "type": "departure",
+    "url": "bundle://departure.mp3"
+  },
+  {
+    "name": "Chalet",
+    "type": "chalet_iphone",
+    "url": "bundle://chalet_iphone.mp3"
+  },
+  {
+    "name": "Canopy",
+    "type": "canopy_iphone",
+    "url": "bundle://canopy_iphone.mp3"
+  },
+  {
+    "name": "Arpeggio",
+    "type": "arpeggio",
+    "url": "bundle://arpeggio.mp3"
+  }
+]
