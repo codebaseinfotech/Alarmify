@@ -48,6 +48,8 @@
 		BC4259A52F0BC4A400C15DA6 /* OnboardingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4259A32F0BC4A400C15DA6 /* OnboardingVC.xib */; };
 		BC4259AA2F0BC87000C15DA6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4259A82F0BC87000C15DA6 /* HomeVC.swift */; };
 		BC4259AB2F0BC87000C15DA6 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4259A92F0BC87000C15DA6 /* HomeVC.xib */; };
+		BC75E8722F0D22F000947022 /* StartChallengesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC75E86F2F0D22F000947022 /* StartChallengesVC.xib */; };
+		BC75E8732F0D22F000947022 /* StartChallengesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75E86E2F0D22F000947022 /* StartChallengesVC.swift */; };
 		BC81EB712F0CC68E00114F1E /* DayCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81EB6F2F0CC68E00114F1E /* DayCVCell.swift */; };
 		BC81EB722F0CC68E00114F1E /* DayCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC81EB702F0CC68E00114F1E /* DayCVCell.xib */; };
 		BC81EB752F0CC7C800114F1E /* AddNewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81EB742F0CC7C800114F1E /* AddNewViewModel.swift */; };
@@ -130,6 +132,8 @@
 		BC4259A32F0BC4A400C15DA6 /* OnboardingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingVC.xib; sourceTree = "<group>"; };
 		BC4259A82F0BC87000C15DA6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		BC4259A92F0BC87000C15DA6 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		BC75E86E2F0D22F000947022 /* StartChallengesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartChallengesVC.swift; sourceTree = "<group>"; };
+		BC75E86F2F0D22F000947022 /* StartChallengesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartChallengesVC.xib; sourceTree = "<group>"; };
 		BC81EB6F2F0CC68E00114F1E /* DayCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCVCell.swift; sourceTree = "<group>"; };
 		BC81EB702F0CC68E00114F1E /* DayCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCVCell.xib; sourceTree = "<group>"; };
 		BC81EB742F0CC7C800114F1E /* AddNewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewViewModel.swift; sourceTree = "<group>"; };
@@ -379,6 +383,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		BC75E8702F0D22F000947022 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC75E86E2F0D22F000947022 /* StartChallengesVC.swift */,
+				BC75E86F2F0D22F000947022 /* StartChallengesVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC75E8712F0D22F000947022 /* StartChallenges */ = {
+			isa = PBXGroup;
+			children = (
+				BC75E8702F0D22F000947022 /* View */,
+			);
+			path = StartChallenges;
+			sourceTree = "<group>";
+		};
 		BC81EB6D2F0CC67300114F1E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,6 +428,7 @@
 		BC81EB822F0CD5B300114F1E /* SubVC */ = {
 			isa = PBXGroup;
 			children = (
+				BC75E8712F0D22F000947022 /* StartChallenges */,
 				BCBF73F02F0D032B004F134A /* Snooze */,
 				BCBF73D92F0CFC30004F134A /* Barcode Challenge */,
 				BCBF73DD2F0CFC30004F134A /* Math Challenge */,
@@ -659,6 +681,7 @@
 				BCBF73C62F0CECBA004F134A /* ios_18_journey.mp3 in Resources */,
 				BCBF73C72F0CECBA004F134A /* kettle_iphone.mp3 in Resources */,
 				BCBF73C82F0CECBA004F134A /* ios_26_little_bird.mp3 in Resources */,
+				BC75E8722F0D22F000947022 /* StartChallengesVC.xib in Resources */,
 				BCBF73C92F0CECBA004F134A /* chalet_iphone.mp3 in Resources */,
 				BCBF73CA2F0CECBA004F134A /* dollop_iphone.mp3 in Resources */,
 				BCBF73CB2F0CECBA004F134A /* sencha_ios.mp3 in Resources */,
@@ -748,6 +771,7 @@
 				BCBF73E82F0CFC30004F134A /* BarcodeChallengeVC.swift in Sources */,
 				BCBF73E92F0CFC30004F134A /* BarcodeListTblViewCell.swift in Sources */,
 				BCBF73EA2F0CFC30004F134A /* RewriteChallengeVC.swift in Sources */,
+				BC75E8732F0D22F000947022 /* StartChallengesVC.swift in Sources */,
 				BC81EB872F0CD5D100114F1E /* AlarmSoundVC.swift in Sources */,
 				BC42596E2F0BC1BD00C15DA6 /* UIColor+Extention.swift in Sources */,
 				BC42596F2F0BC1BD00C15DA6 /* AppConstants.swift in Sources */,

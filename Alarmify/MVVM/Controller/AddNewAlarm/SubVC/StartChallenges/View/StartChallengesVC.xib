@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartChallengesVC" customModule="Alarmify" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOl-dT-ZU3">
+                    <rect key="frame" x="49" y="363.66666666666669" width="295.33333333333331" height="124.66666666666669"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="102"/>
+                    <color key="textColor" red="0.90196078431372551" green="0.91764705882352937" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thursday - 01 Jan, 2026" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeO-7u-TWA">
+                    <rect key="frame" x="20" y="284.33333333333331" width="353" height="29.333333333333314"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="24"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91764705879999997" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Siu-OW-RvM">
+                    <rect key="frame" x="176.33333333333334" y="518.33333333333337" width="40.333333333333343" height="29.333333333333371"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                    <color key="textColor" red="0.90196078430000004" green="0.91764705879999997" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0CU-JM-FNh">
+                    <rect key="frame" x="166.66666666666666" y="779" width="60" height="32"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Snooze">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="tappedSnoze:" destination="-1" eventType="touchUpInside" id="jia-Kx-ftT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnN-ap-Bfn">
+                    <rect key="frame" x="20" y="695" width="353" height="54"/>
+                    <color key="backgroundColor" name="primery_green"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="alT-H7-uH1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Start Challenges">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="27"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="tappedStartChallege:" destination="-1" eventType="touchUpInside" id="ttB-Jv-MtW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIY-8a-S9G">
+                    <rect key="frame" x="143" y="603" width="107" height="42"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="24"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Wake up">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="tappedWakeUp:" destination="-1" eventType="touchUpInside" id="q1j-SI-BA7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="primery"/>
+            <constraints>
+                <constraint firstItem="0CU-JM-FNh" firstAttribute="top" secondItem="WnN-ap-Bfn" secondAttribute="bottom" constant="30" id="49b-xm-FmK"/>
+                <constraint firstItem="LeO-7u-TWA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="75Z-5T-d92"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LeO-7u-TWA" secondAttribute="trailing" constant="20" id="A2R-Jq-9qp"/>
+                <constraint firstItem="Siu-OW-RvM" firstAttribute="top" secondItem="cOl-dT-ZU3" secondAttribute="bottom" constant="30" id="JTj-P1-sK9"/>
+                <constraint firstItem="cOl-dT-ZU3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Jsa-cH-PpH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WnN-ap-Bfn" secondAttribute="trailing" constant="20" id="RKw-Ni-lht"/>
+                <constraint firstAttribute="bottom" secondItem="0CU-JM-FNh" secondAttribute="bottom" constant="41" id="RY2-Id-TG0"/>
+                <constraint firstItem="0CU-JM-FNh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UJK-ot-kSa"/>
+                <constraint firstItem="cOl-dT-ZU3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bh2-sw-Dhm"/>
+                <constraint firstItem="WnN-ap-Bfn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="gg4-Tm-0oq"/>
+                <constraint firstItem="WnN-ap-Bfn" firstAttribute="top" secondItem="zIY-8a-S9G" secondAttribute="bottom" constant="50" id="h3I-8P-tYI"/>
+                <constraint firstItem="cOl-dT-ZU3" firstAttribute="top" secondItem="LeO-7u-TWA" secondAttribute="bottom" constant="50" id="i39-yE-So4"/>
+                <constraint firstItem="Siu-OW-RvM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iAw-ic-9Sy"/>
+                <constraint firstItem="zIY-8a-S9G" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xCd-xW-5u8"/>
+            </constraints>
+            <point key="canvasLocation" x="5" y="115"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="primery">
+            <color red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primery_green">
+            <color red="0.19215686274509805" green="0.75294117647058822" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
