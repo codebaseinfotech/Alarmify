@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension String {
     func convertHTMLToPlainText() -> String? {
@@ -48,6 +49,12 @@ extension String {
     }
 }
 
+extension String {
+    var image: UIImage {
+        return UIImage(named: self) ?? UIImage()
+    }
+}
+
 
 // MARK: - NSMutableData
 extension NSMutableData {
@@ -56,3 +63,4 @@ extension NSMutableData {
         append(data!)
     }
 }
+

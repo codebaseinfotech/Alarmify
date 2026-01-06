@@ -18,7 +18,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SnoozeVC" customModule="Alarmify" customModuleProvider="target">
             <connections>
+                <outlet property="FiveMinIV" destination="cTH-uc-4cH" id="QR1-P7-yCr"/>
+                <outlet property="ThreeMinIV" destination="Ccc-9u-blr" id="IL4-gp-eoj"/>
+                <outlet property="TwoTimeIV" destination="UCc-s7-Yfw" id="yp4-uJ-Fw6"/>
                 <outlet property="closeButton" destination="lgh-Bm-h6b" id="Ctt-g3-oeM"/>
+                <outlet property="intervelLabel" destination="djg-l1-PKV" id="Xie-de-87Y"/>
+                <outlet property="maxSnoozeLabel" destination="5LK-ad-Zib" id="RXW-Nj-A0h"/>
+                <outlet property="oneMinIV" destination="YfQ-pG-1Ou" id="KPU-pz-U5w"/>
+                <outlet property="oneTimeIV" destination="AHC-h0-sEg" id="hmq-06-LAG"/>
+                <outlet property="threeTimeIV" destination="hiH-tH-df5" id="3oC-J9-8Uc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -56,6 +64,9 @@
                                     <real key="value" value="22"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="tappedClose:" destination="-1" eventType="touchUpInside" id="5mE-IK-MTc"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snooze" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3v-l7-WYx">
                             <rect key="frame" x="20" y="27" width="82.666666666666671" height="27"/>
@@ -66,7 +77,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Fgf-DD-0vB">
                             <rect key="frame" x="20" y="84" width="353" height="19.666666666666671"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snooze" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fp-Ow-mTP">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interval" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fp-Ow-mTP">
                                     <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="19.666666666666668"/>
                                     <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                     <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -106,6 +117,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLB-IC-IIu">
                                             <rect key="frame" x="0.0" y="0.0" width="353" height="38"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <connections>
+                                                <action selector="tappedOneMin:" destination="-1" eventType="touchUpInside" id="pXF-NS-4mX"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -143,6 +157,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpD-Y3-8dL">
                                             <rect key="frame" x="0.0" y="0.0" width="353" height="38"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <connections>
+                                                <action selector="tappedThreeMin:" destination="-1" eventType="touchUpInside" id="ZK6-sC-vTc"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -180,6 +197,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZK-Nd-dQI">
                                             <rect key="frame" x="0.0" y="0.0" width="353" height="38"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <connections>
+                                                <action selector="tappedFiveMin:" destination="-1" eventType="touchUpInside" id="aZF-pi-4wx"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -246,6 +266,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edu-jj-W2b">
                                             <rect key="frame" x="0.0" y="0.0" width="353" height="38"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <connections>
+                                                <action selector="tappedOneTime:" destination="-1" eventType="touchUpInside" id="ETZ-od-0xf"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -283,6 +306,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LV6-ON-AaW">
                                             <rect key="frame" x="0.0" y="0.0" width="353" height="38"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <connections>
+                                                <action selector="tappedTwoTime:" destination="-1" eventType="touchUpInside" id="DwB-ha-OcF"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -320,6 +346,9 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxd-0v-HXP">
                                             <rect key="frame" x="0.0" y="0.0" width="353" height="38"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <connections>
+                                                <action selector="tappedThreeTime:" destination="-1" eventType="touchUpInside" id="ctK-sg-hfK"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>

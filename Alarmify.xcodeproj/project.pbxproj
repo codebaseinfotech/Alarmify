@@ -83,6 +83,7 @@
 		BCBF73EF2F0CFC30004F134A /* BarcodeListTblViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73D42F0CFC30004F134A /* BarcodeListTblViewCell.xib */; };
 		BCBF73F42F0D033D004F134A /* SnoozeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBF73F32F0D033D004F134A /* SnoozeVC.xib */; };
 		BCBF73F52F0D033D004F134A /* SnoozeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF73F22F0D033D004F134A /* SnoozeVC.swift */; };
+		BCE083202F0D150E005717C0 /* UIImageView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE0831F2F0D150D005717C0 /* UIImageView+Extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -164,6 +165,7 @@
 		BCBF73E32F0CFC30004F134A /* ShakeChallengeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShakeChallengeVC.xib; sourceTree = "<group>"; };
 		BCBF73F22F0D033D004F134A /* SnoozeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnoozeVC.swift; sourceTree = "<group>"; };
 		BCBF73F32F0D033D004F134A /* SnoozeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnoozeVC.xib; sourceTree = "<group>"; };
+		BCE0831F2F0D150D005717C0 /* UIImageView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extention.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				BC42595C2F0BC1BD00C15DA6 /* String+Extention.swift */,
+				BCE0831F2F0D150D005717C0 /* UIImageView+Extention.swift */,
 				BC42595D2F0BC1BD00C15DA6 /* UIColor+Extention.swift */,
 				BC42595E2F0BC1BD00C15DA6 /* UIFont+Extention.swift */,
 				BC42595F2F0BC1BD00C15DA6 /* UITextField+Extention.swift */,
@@ -741,6 +744,7 @@
 				BC81EB8B2F0CDAB100114F1E /* AlarmSoundViewModel.swift in Sources */,
 				BCBF73E62F0CFC30004F134A /* ShakeChallengeVC.swift in Sources */,
 				BCBF73E72F0CFC30004F134A /* MathChallengeVC.swift in Sources */,
+				BCE083202F0D150E005717C0 /* UIImageView+Extention.swift in Sources */,
 				BCBF73E82F0CFC30004F134A /* BarcodeChallengeVC.swift in Sources */,
 				BCBF73E92F0CFC30004F134A /* BarcodeListTblViewCell.swift in Sources */,
 				BCBF73EA2F0CFC30004F134A /* RewriteChallengeVC.swift in Sources */,
